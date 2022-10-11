@@ -31,7 +31,7 @@ class TestBaidu(object):
 
     @allure.feature('搜索功能二')
     @pytest.mark.parametrize("search_content", ["上海", "北京"])
-    @pytest.mark.skip("reason no")
+    # @pytest.mark.skip("reason no")
     def test_search1(self, search_content):
         self.bs.search_input(search_content)
         self.bs.search_button()
