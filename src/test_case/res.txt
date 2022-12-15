@@ -1,0 +1,126 @@
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="product"
+
+1
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="module"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="project"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="execution"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="openedBuild[]"
+
+trunk
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="openedBuild[]"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="assignedTo"
+
+howell
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="deadline"
+
+2022-12-14
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="type"
+
+codeerror
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="os"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="browser"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="title"
+
+2134234
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="color"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="severity"
+
+3
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="pri"
+
+3
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="steps"
+
+<p>[步骤]</p>
+23<br />
+<p>[结果]</p>
+23<br />
+<p>[期望]</p>
+23<br />
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="story"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="task"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="oldTaskID"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="mailto[]"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="mailto[]"
+
+howell
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="keywords"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="status"
+
+active
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="labels[]"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="files[]"
+
+
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="uid"
+
+6399c7bcdb141
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="case"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="caseVersion"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="result"
+
+0
+-----------------------------36654949154082118793226609963
+Content-Disposition: form-data; name="testtask"
+
+0
+-----------------------------36654949154082118793226609963--

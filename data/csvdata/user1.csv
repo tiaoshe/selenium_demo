@@ -1,0 +1,5 @@
+username,password,ck-result,ck-locate,ck-message
+admin,howell3901,success,/zentao/,
+howell,howell3901,success,/zentao/,
+pengyou,howell3901,success,/zentao/,
+dulumen,howell3901,fail,,登录失败，请检查您的用户名或密码是否填写正确。

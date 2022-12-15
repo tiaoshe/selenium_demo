@@ -1,0 +1,306 @@
+﻿{
+  "log": {
+    "pages": [],
+    "comment": "exported @ 2022/12/13 14:16:59",
+    "entries": [
+      {
+        "time": 7838,
+        "serverIPAddress": "192.168.1.3",
+        "connection": "ClientPort:31445;EgressPort:31446",
+        "request": {
+          "headersSize": 1194,
+          "postData": {
+            "text": "-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"product\"\r\n\r\n1\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"module\"\r\n\r\n1\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"project\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"execution\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"openedBuild[]\"\r\n\r\ntrunk\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"openedBuild[]\"\r\n\r\n\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"assignedTo\"\r\n\r\nhowell\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"deadline\"\r\n\r\n2022-12-13\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\ncodeerror\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"os\"\r\n\r\nwindows\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"browser\"\r\n\r\nchrome\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"title\"\r\n\r\n\u4ee3\u7801\u903b\u8f91\u9519\u8bef\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"color\"\r\n\r\n\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"severity\"\r\n\r\n3\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"pri\"\r\n\r\n3\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"steps\"\r\n\r\n<p>[\u6b65\u9aa4]</p>\r\n<p>1\u3001\u7b2c\u4e00\u6b65</p>\r\n<p>2\u3001\u7b2c\u4e8c\u6b65</p>\r\n<p>[\u7ed3\u679c]</p>\r\n1<br />\r\n<p>[\u671f\u671b]</p>\r\n2<br />\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"story\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"task\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"oldTaskID\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"mailto[]\"\r\n\r\n\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"keywords\"\r\n\r\n\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"status\"\r\n\r\nactive\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"labels[]\"\r\n\r\n\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"files[]\"\r\n\r\n\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"uid\"\r\n\r\n639817f45b4b4\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"case\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"caseVersion\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"result\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861\r\nContent-Disposition: form-data; name=\"testtask\"\r\n\r\n0\r\n-----------------------------10776757973417974492512281861--\r\n",
+            "mimeType": "multipart/form-data"
+          },
+          "queryString": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "192.168.1.3:8088"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/javascript, */*; q=0.01"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate"
+            },
+            {
+              "name": "Referer",
+              "value": "http://192.168.1.3:8088/zentao/bug-create-1-0-moduleID=1.html"
+            },
+            {
+              "name": "X-Requested-With",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "Content-Type",
+              "value": "multipart/form-data; boundary=---------------------------10776757973417974492512281861"
+            },
+            {
+              "name": "Content-Length",
+              "value": "3510"
+            },
+            {
+              "name": "Origin",
+              "value": "http://192.168.1.3:8088"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Cookie",
+              "value": "lang=zh-cn; device=desktop; theme=default; tab=qa; zentaosid=f82a25f3cdf98f9807e93575e0d44f58; goback=%7B%22product%22%3A%22http%3A%5C%2F%5C%2F192.168.1.3%3A8088%5C%2Fzentao%5C%2Fproduct-showerrornone-qa-bug-0.html%22%2C%22qa%22%3A%22http%3A%5C%2F%5C%2F192.168.1.3%3A8088%5C%2Fzentao%5C%2Fbug-browse-1-0-bymodule-1-id_desc.html%22%7D; preBranch=0; preProductID=1; storyModule=1; storyBranch=0; treeBranch=0; productStoryOrder=id_desc; bugModule=1; bugBranch=0; qaBugOrder=id_desc; lastBugModule=1; windowWidth=1664; windowHeight=809"
+            }
+          ],
+          "bodySize": 3510,
+          "url": "http://192.168.1.3:8088/zentao/bug-create-1-0-moduleID=1.html",
+          "cookies": [
+            {
+              "name": "lang",
+              "value": "zh-cn"
+            },
+            {
+              "name": "device",
+              "value": "desktop"
+            },
+            {
+              "name": "theme",
+              "value": "default"
+            },
+            {
+              "name": "tab",
+              "value": "qa"
+            },
+            {
+              "name": "zentaosid",
+              "value": "f82a25f3cdf98f9807e93575e0d44f58"
+            },
+            {
+              "name": "goback",
+              "value": "%7B%22product%22%3A%22http%3A%5C%2F%5C%2F192.168.1.3%3A8088%5C%2Fzentao%5C%2Fproduct-showerrornone-qa-bug-0.html%22%2C%22qa%22%3A%22http%3A%5C%2F%5C%2F192.168.1.3%3A8088%5C%2Fzentao%5C%2Fbug-browse-1-0-bymodule-1-id_desc.html%22%7D"
+            },
+            {
+              "name": "preBranch",
+              "value": "0"
+            },
+            {
+              "name": "preProductID",
+              "value": "1"
+            },
+            {
+              "name": "storyModule",
+              "value": "1"
+            },
+            {
+              "name": "storyBranch",
+              "value": "0"
+            },
+            {
+              "name": "treeBranch",
+              "value": "0"
+            },
+            {
+              "name": "productStoryOrder",
+              "value": "id_desc"
+            },
+            {
+              "name": "bugModule",
+              "value": "1"
+            },
+            {
+              "name": "bugBranch",
+              "value": "0"
+            },
+            {
+              "name": "qaBugOrder",
+              "value": "id_desc"
+            },
+            {
+              "name": "lastBugModule",
+              "value": "1"
+            },
+            {
+              "name": "windowWidth",
+              "value": "1664"
+            },
+            {
+              "name": "windowHeight",
+              "value": "809"
+            }
+          ],
+          "method": "POST",
+          "httpVersion": "HTTP/1.1"
+        },
+        "timings": {
+          "blocked": -1,
+          "ssl": 0,
+          "receive": 7838,
+          "wait": 0,
+          "dns": 0,
+          "send": 0,
+          "connect": 0
+        },
+        "response": {
+          "headersSize": 1095,
+          "bodySize": 103,
+          "statusText": "OK",
+          "redirectURL": "",
+          "status": 200,
+          "httpVersion": "HTTP/1.1",
+          "cookies": [
+            {
+              "name": "lang",
+              "expires": "2023-01-12T14:14:20.0000000+08:00",
+              "path": "/zentao/",
+              "value": "zh-cn"
+            },
+            {
+              "expires": "2023-01-12T14:14:20.0000000+08:00",
+              "name": "device",
+              "httpOnly": true,
+              "path": "/zentao/",
+              "value": "desktop"
+            },
+            {
+              "name": "theme",
+              "expires": "2023-01-12T14:14:20.0000000+08:00",
+              "path": "/zentao/",
+              "value": "default"
+            },
+            {
+              "name": "lastBugModule",
+              "expires": "2023-01-12T14:14:20.0000000+08:00",
+              "path": "/zentao/",
+              "value": "1"
+            },
+            {
+              "name": "bugModule",
+              "path": "/zentao/",
+              "value": "0"
+            }
+          ],
+          "content": {
+            "compression": 0,
+            "text": "{\"result\":\"success\",\"message\":\"\u4fdd\u5b58\u6210\u529f\",\"locate\":\"/zentao/bug-browse-1-0-byModule-1-id_desc.html\"}",
+            "size": 103,
+            "mimeType": "text/html; Language=UTF-8;charset=UTF-8"
+          },
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 13 Dec 2022 06:14:20 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 19 Nov 1981 08:52:00 GMT"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "lang=zh-cn; expires=Thu, 12-Jan-2023 06:14:20 GMT; Max-Age=2592000; path=/zentao/"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "device=desktop; expires=Thu, 12-Jan-2023 06:14:20 GMT; Max-Age=2592000; path=/zentao/; HttpOnly"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "theme=default; expires=Thu, 12-Jan-2023 06:14:20 GMT; Max-Age=2591999; path=/zentao/"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=3600; includeSubDomains"
+            },
+            {
+              "name": "Referrer-Policy",
+              "value": "no-referrer-when-downgrade"
+            },
+            {
+              "name": "X-Permitted-Cross-Domain-Policies",
+              "value": "master-only"
+            },
+            {
+              "name": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "form-action 'self';connect-src 'self';"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "lastBugModule=1; expires=Thu, 12-Jan-2023 06:14:20 GMT; Max-Age=2591998; path=/zentao/"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "bugModule=0; path=/zentao/"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Length",
+              "value": "103"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=10, max=100"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; Language=UTF-8;charset=UTF-8"
+            }
+          ]
+        },
+        "startedDateTime": "2022-12-13T14:14:20.3894018+08:00",
+        "cache": {}
+      }
+    ],
+    "creator": {
+      "name": "Fiddler",
+      "comment": "https://fiddler2.com",
+      "version": "5.0.20211.51073"
+    },
+    "version": "1.2"
+  }
+}

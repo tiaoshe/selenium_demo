@@ -42,6 +42,7 @@ class TestBaidu(object):
         self.bs.driver.save_screenshot(path)
         # 校验
         assert search_content in self.bs.driver.page_source
+        assert 1 == 2
 
 
 if __name__ == '__main__':
@@ -52,5 +53,5 @@ if __name__ == '__main__':
     -s: 显示程序中的print/logging输出
     添加参数： --alluredir ../../Reports/allure
     '''
-    # pytest.main(["--alluredir", '../../Reports/allure', 'test_search.py', ])
-    os.system(r"allure generate -c -o allure-report")
+    pytest.main(["--alluredir", '../../Reports/allure', 'test_search.py', ])
+    # os.system(r"allure generate -c -o allure-report")

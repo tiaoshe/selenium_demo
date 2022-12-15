@@ -1,0 +1,9 @@
+key,username,password,ck-message,ck-code,ck-status,ck-data
+username,admin,123456,用户名或密码错误,500,200,null
+username,howell,123456,用户名或密码错误,500,200,null
+username,dulumen,123456,用户名或密码错误,500,200,null
+username,chenxi,123456,用户名或密码错误,500,200,null
+password,admin,123456,用户名或密码错误,500,200,null
+password,admin,1234567,用户名或密码错误,500,200,null
+password,admin,234567,用户名或密码错误,500,200,null
+password,admin,345678,用户名或密码错误,500,200,null

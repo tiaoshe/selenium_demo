@@ -1,0 +1,8 @@
+{%for item in data%}
+    # {{item.describe}}
+    def {{item.method_name}}(self, **kwargs):
+        kwargs['method'] = "{{item.method}}"
+        kwargs['url'] = r"{{item.url}}"
+        response = self.worker.request_http(**kwargs)
+        return response
+{%endfor%}

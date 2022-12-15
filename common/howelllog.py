@@ -24,34 +24,37 @@ class WriteLog(object):
         self.filemode = 'a'
         self.encoding = 'utf-8'
         self.name = os.path.split(name)[-1]
+        # self.logfile = util.get_root_path() + r'\logs\running.log'
+        # 由于报错使用绝对路径
+        self.logfile = r'D:\workspace\selenium_demo\logs\running.log'
         # 判断文件是否存在，如果存在进行下一步判断，如果不存在则创建新文件
-        if os.path.isfile(logfile):
-            fsize = os.path.getsize(logfile)
+        if os.path.isfile(self.logfile):
+            fsize = os.path.getsize(self.logfile)
             fsize = fsize / float(1024 * 1024)
             # 判断文件是否大于2.3MB 如果大于 则将文件重新命名移动到history文件夹中
             if fsize >= 2.3:
-                filepath_new_name = os.path.dirname(logfile) + r"\old" + str(int(time.time())) + ".log"
-                os.rename(logfile, filepath_new_name)
+                filepath_new_name = os.path.dirname(self.logfile) + r"\old" + str(int(time.time())) + ".log"
+                os.rename(self.logfile, filepath_new_name)
                 oldpos = filepath_new_name
-                newpos = os.path.dirname(logfile) + r"\history"
+                newpos = os.path.dirname(self.logfile) + r"\history"
                 shutil.move(oldpos, newpos)
-                file = open(logfile, 'w', encoding=self.encoding)
+                file = open(self.logfile, 'w', encoding=self.encoding)
                 file.close()
-                self.filepath = logfile
+                self.filepath = self.logfile
         else:
-            file = open(logfile, 'w', encoding=self.encoding)
+            file = open(self.logfile, 'w', encoding=self.encoding)
             file.close()
-            self.filepath = logfile
+            self.filepath = self.logfile
 
     def write(self, content):
         # 获取当前时间
-        time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        d_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # 获取调用函数的行号
         f_current_line = str(currentframe().f_back.f_lineno)
         # mod = getmodule(stack()[1][0])  # 调用函数的信息
         # module_name = mod.__name__  # 函数名
         module_info = self.name + "[line %s]" % f_current_line
-        content_list = [time, module_info, content, '\n']
+        content_list = [d_time, module_info, content, '\n']
         content_str = " ".join(content_list)
-        with open(logfile, self.filemode, encoding=self.encoding) as f:
+        with open(self.logfile, self.filemode, encoding=self.encoding) as f:
             f.write(content_str)

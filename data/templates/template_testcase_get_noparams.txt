@@ -1,0 +1,23 @@
+from src.api.zendaoo.test_api_shengmeijia import Zendao
+from common.F_check import check_resout
+
+assert_list = [{'check': 'status_code', 'assert': 'equals', 'expect': 200, 'msg': 'assert response status code'},
+               {'check': 'headers.Content-Type', 'assert': 'equals',
+                'expect': 'text/html; Language=UTF-8;charset=UTF-8', 'msg': 'assert response header Content-Type'}]
+
+headers = {'Host': '192.168.1.3:8088',
+           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0',
+           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+           'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+           'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://192.168.1.3:8088/zentao/',
+           'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'}
+
+worker = Zendao()
+
+
+def test_zendao_my():
+    kwargs = dict()
+    kwargs['headers'] = headers
+    response = worker.zentao_my(**kwargs)
+    # 检查数据正确性
+    check_resout(response, assert_list)

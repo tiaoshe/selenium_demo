@@ -1,0 +1,32 @@
+import pytest
+from common.F_loader import load_csv_to_key
+from common.F_check import check_resout
+from {{file_path}} import {{class_title}}
+
+assert_list = {{assert_list}}
+
+file_path = r'{{csv_file}}'
+data_dict = load_csv_to_key(file_path)
+
+
+@allure.feature("测试模块")
+class {{testcase_class_name}}(object):
+    headers = {{headers}}
+    worker = None
+
+    @classmethod
+    def setup_class(cls):
+        cls.worker = {{class_title}}()
+{%for item in case_list%}
+    @allure.story("测试用例接口描述")
+    @allure.title("{{item.param_name}}-参数验证")
+    @pytest.mark.parametrize("{{item.param_name}}", data_dict['{{item.param_name}}'])
+    def {{item.case_name}}(self, {{item.param_name}}):
+        kwargs = dict()
+        kwargs['headers'] = {{testcase_class_name}}.headers
+        data = dict(){%for param in item.params%}
+        data['{{param}}'] = {{item.param_name}}['{{param}}']        {%endfor%}
+        kwargs['json'] = data
+        response = {{testcase_class_name}}.worker.{{item.api_name}}(**kwargs)
+        check_resout(response, assert_list, json={{item.param_name}})
+{%endfor%}

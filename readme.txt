@@ -52,3 +52,8 @@ SHA256:uYhNxq/ALFFJB+tOYLAlaRDvLDhAm+3oRiQwJnaxgM8 tiaoshe
         allure generate ./run/ -o ./report/run/ --clean
 16-研究下allure教程，看看如何生成自己想要的报告文件
 
+自动化框架流程
+先通过har文件生成yaml文件
+通过yaml文件自动生成 test_api文件 和 testcase py文件 以及附带的数据驱动csv文件
+allure运行命令 pytest .\test_search.py --alluredir ../../Reports/allure
+allure generate .\Reports\allure\ -o .\Reports\html --clean
