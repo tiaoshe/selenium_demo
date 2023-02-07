@@ -9,10 +9,8 @@ def test_case01(tmpdir):
     这是用例的描述 巴拉巴拉巴拉
     :return:
     """
-    print(tmpdir)
-    print("用例运行时")
     print("z我是李杰")
-    print("用例运行时")
+    assert 1 == 2
     # raise SystemExit(1)
 
 

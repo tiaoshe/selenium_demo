@@ -1,4 +1,5 @@
 import pytest
+import allure
 from common.F_loader import load_csv_to_key
 from common.F_check import check_resout
 from {{file_path}} import {{class_title}}

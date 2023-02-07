@@ -24,7 +24,12 @@ def get_root_path(file_dir=None):
 
 # 将URL域名去掉
 def remove_host(url_temp: str):
-    return re.sub(r"http[s]?://[\w\.]*[:]?[\d]*", "", url_temp)
+    print()
+    # return re.sub(r"http[s]?://[\w\.]*[:]?[\d]*", "", url_temp)
+    temp_a = re.sub(r"^((http://)|(https://))?([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}(/)", "",
+                    url_temp)
+    temp = re.sub(r".*\?(.*)", "", temp_a)
+    return temp
 
 
 # 判断文件是否存在，装饰器

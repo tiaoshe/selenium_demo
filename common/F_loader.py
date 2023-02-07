@@ -109,7 +109,11 @@ def har2json(file_path):
         if body:
             request['body'] = body
         else:
-            request['body'] = eval(item.get('request').get('postData').get('text'))
+            text = item.get('request').get('postData').get('text')
+            if text:
+                request['body'] = eval(item.get('request').get('postData').get('text'))
+            else:
+                request['body'] = ""
         api_dict['name'] = ""
         api_dict['describe'] = ""
         api_dict['request'] = request
@@ -130,6 +134,6 @@ def har2yaml(file_path_har, file_path_yaml):
 if __name__ == '__main__':
     # filepath = "D:/workspace/selenium_demo/data/yamlDoc/howell_api.yml"
     # filepath = "D:/workspace/selenium_demo/data/csvdata/user.csv"
-    file_path_har = "D:/workspace/selenium_demo/data/hardata/shengmeijia.har"
-    file_path_yaml = "D:/workspace/selenium_demo/data/yamlDoc/shengmeijia.yaml"
+    file_path_har = "D:/workspace/selenium_demo/data/hardata/wangxiaobao1.har"
+    file_path_yaml = "D:/workspace/selenium_demo/data/yamlDoc/wangxiaobao.yaml"
     har2yaml(file_path_har, file_path_yaml)

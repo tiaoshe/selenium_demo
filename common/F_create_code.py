@@ -241,9 +241,9 @@ if __name__ == '__main__':
     # yaml_filedir = get_root_path() + r"\data\yamlDoc\shengmeijia.yaml"
     # case_file = get_root_path() + r"\src\test_case\shengmeijia"
 
-    py_filedir = get_root_path() + r"\src\api\zendaoo\test_api_shengmeijia.py"
-    yaml_filedir = get_root_path() + r"\data\yamlDoc\zendao.yaml"
-    case_file = get_root_path() + r"\src\test_case\zendaoo"
+    py_filedir = get_root_path() + r"\src\api\wangxiaobao\test_api_wangxiaobao.py"
+    yaml_filedir = get_root_path() + r"\data\yamlDoc\wangxiaobao.yaml"
+    case_file = get_root_path() + r"\src\test_case\wangxiaobao"
     product = ProductionCode(yaml_filedir, py_filedir, case_file)
     product.start()
 

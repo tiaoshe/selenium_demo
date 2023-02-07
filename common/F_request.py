@@ -16,9 +16,11 @@ class RequestHttp(object):
     def request_http(self, **kwargs):
         logger.write(str(kwargs))
         kwargs['url'] = self.host + kwargs['url']
+        print(kwargs['url'])
         for item, value in kwargs['headers'].items():
             self.headers[item] = value
         kwargs['headers'] = self.headers
+        kwargs['verify'] = False
         response = requests.Session().request(**kwargs)
         logger.write(response.text)
         logger.write("接口响应时间是：%s" % str(response.elapsed.microseconds / 1000))
