@@ -134,6 +134,6 @@ def har2yaml(file_path_har, file_path_yaml):
 if __name__ == '__main__':
     # filepath = "D:/workspace/selenium_demo/data/yamlDoc/howell_api.yml"
     # filepath = "D:/workspace/selenium_demo/data/csvdata/user.csv"
-    file_path_har = "D:/workspace/selenium_demo/data/hardata/wangxiaobao1.har"
-    file_path_yaml = "D:/workspace/selenium_demo/data/yamlDoc/wangxiaobao.yaml"
+    file_path_har = "D:/workspace/selenium_demo/data/hardata/1111.har"
+    file_path_yaml = "D:/workspace/selenium_demo/data/yamlDoc/1111.yaml"
     har2yaml(file_path_har, file_path_yaml)

@@ -34,3 +34,4 @@ class TestAppSalerSalerV1Account(object):
         response = TestAppSalerSalerV1Account.worker.app_saler_saler_v1_account(**kwargs)
         print(response.json())
         check_resout(response, assert_list)
+
