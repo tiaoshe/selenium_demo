@@ -1,4 +1,6 @@
 import os, re
+import time
+
 from common.control_config import ControlConfig
 import faker
 import subprocess
@@ -94,7 +96,10 @@ def run_test_case():
 
 # 定时任务方法，用于执行定时任务job
 def schedule_howell():
-    schedule.every(5).do(run_test_case)
+    schedule.every().minutes.do(run_test_case)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 
 if __name__ == '__main__':
