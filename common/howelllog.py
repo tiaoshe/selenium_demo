@@ -24,9 +24,9 @@ class WriteLog(object):
         self.filemode = 'a'
         self.encoding = 'utf-8'
         self.name = os.path.split(name)[-1]
-        # self.logfile = util.get_root_path() + r'\logs\running.log'
+        self.logfile = util.get_root_path() + r'\logs\running.log'
         # 由于报错使用绝对路径
-        self.logfile = r'D:\workspace\selenium_demo\logs\running.log'
+        # self.logfile = r'D:\workspace\selenium_demo\logs\running.log'
         # 判断文件是否存在，如果存在进行下一步判断，如果不存在则创建新文件
         if os.path.isfile(self.logfile):
             fsize = os.path.getsize(self.logfile)

@@ -1,6 +1,9 @@
 import os, re
 from common.control_config import ControlConfig
 import faker
+import subprocess
+import schedule
+from datetime import datetime
 
 
 # 获取根目录路径 ：根据配置文件中所定义的根目录下文件夹，定位根目录
@@ -72,11 +75,34 @@ def instantiation_faker():
     return faker.Faker(locale="zh_CN")
 
 
+# 运行flask程序
+def app_run():
+    # file_path = os.getcwd() + r"\flask_c"
+    # re.sub("","",file_path)
+    os.chdir("D:\\PycharmProjects\\selenium_demo\\flask_c")
+    # print(file_path)
+    # os.chdir(file_path)
+    subprocess.run("export FLASK_APP=app.py", shell=True)
+    subprocess.run("export FLASK_ENV=production", shell=True)
+    subprocess.run("flask run -p 5555 -h 0.0.0.0", shell=True)
+
+
+# 运行测试用例
+def run_test_case():
+    print(os.getcwd())
+
+
+# 定时任务方法，用于执行定时任务job
+def schedule_howell():
+    schedule.every(5).do(run_test_case)
+
+
 if __name__ == '__main__':
-    # print(get_root_path(r"D:\workspace\selenium_demo"))
-    url = "http://192.168.1.3:8088//zentao/user-refreshRandom.html"
-    # make_api_name(url)
-    a = make_testcase_class_name(url)
-    # f = instantiation_faker()
-    # print(f.text(max_nb_chars=20))
-    print(a)
+    # # print(get_root_path(r"D:\workspace\selenium_demo"))
+    # url = "http://192.168.1.3:8088//zentao/user-refreshRandom.html"
+    # # make_api_name(url)
+    # a = make_testcase_class_name(url)
+    # # f = instantiation_faker()
+    # # print(f.text(max_nb_chars=20))
+    # print(a)
+    app_run()
