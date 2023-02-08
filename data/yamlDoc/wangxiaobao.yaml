@@ -1,0 +1,133 @@
+config:
+  name: testcase description
+teststeps:
+- name: ''
+  describe: ''
+  request:
+    method: GET
+    url: https://fandom-video.test.wangxiaobao.com/app/transcribe/msg/v1/badge-tree
+    headers:
+      Host: fandom-video.test.wangxiaobao.com
+      Accept: '*/*'
+      Connection: keep-alive
+      User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15
+        (KHTML, like Gecko) Mobile/15E148 Html5Plus/1.0 (Immersed/44) uni-app
+      Content-Fft: 924e7d03b7932ac2955ee4c41c4b7e19&dhIvYvkQFhhLSM4scJGb&1675750034155
+      Accept-Language: zh-CN,zh-Hans;q=0.9
+      Accept-Encoding: gzip, deflate, br
+    cookies:
+      sid_fandom-uniapp-gateway: s%3Aac3dGBF8SXuD_ft2MtNNkYrpMH43zpyR.AoU922tjHifn6%2FINWVWP3B5vDCnphyXE4SKaFuz3QX0
+    body: ''
+  validate:
+  - check: status_code
+    assert: equals
+    expect: 200
+    msg: assert response status code
+  - check: headers.Content-Type
+    assert: equals
+    expect: application/json
+    msg: assert response header Content-Type
+- name: ''
+  describe: ''
+  request:
+    method: GET
+    url: https://fandom-video.test.wangxiaobao.com/app/saler/saler/v1/account
+    headers:
+      Host: fandom-video.test.wangxiaobao.com
+      Accept: '*/*'
+      Connection: keep-alive
+      User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15
+        (KHTML, like Gecko) Mobile/15E148 Html5Plus/1.0 (Immersed/44) uni-app
+      Content-Fft: 46aa178a098aefd28d7b020344d60a41&Q4NxNbRmujQiMiUxIVfG&1675750035385
+      Accept-Language: zh-CN,zh-Hans;q=0.9
+      Accept-Encoding: gzip, deflate, br
+    cookies:
+      sid_fandom-uniapp-gateway: s%3Aac3dGBF8SXuD_ft2MtNNkYrpMH43zpyR.AoU922tjHifn6%2FINWVWP3B5vDCnphyXE4SKaFuz3QX0
+    body: ''
+  validate:
+  - check: status_code
+    assert: equals
+    expect: 200
+    msg: assert response status code
+  - check: headers.Content-Type
+    assert: equals
+    expect: application/json
+    msg: assert response header Content-Type
+- name: ''
+  describe: ''
+  request:
+    method: GET
+    url: https://fandom-video.test.wangxiaobao.com/app/transcribe/cus/v1/simple-info/list?page=1&size=12
+    headers:
+      Host: fandom-video.test.wangxiaobao.com
+      Accept: '*/*'
+      Connection: keep-alive
+      User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15
+        (KHTML, like Gecko) Mobile/15E148 Html5Plus/1.0 (Immersed/44) uni-app
+      Content-Fft: c38ba0f3599f90e1b68d125574fd86f6&weF5SuDuw8Fi6QQNx6YQ&1675750035386
+      Accept-Language: zh-CN,zh-Hans;q=0.9
+      Accept-Encoding: gzip, deflate, br
+    cookies:
+      sid_fandom-uniapp-gateway: s%3Aac3dGBF8SXuD_ft2MtNNkYrpMH43zpyR.AoU922tjHifn6%2FINWVWP3B5vDCnphyXE4SKaFuz3QX0
+    body: ''
+  validate:
+  - check: status_code
+    assert: equals
+    expect: 200
+    msg: assert response status code
+  - check: headers.Content-Type
+    assert: equals
+    expect: application/json
+    msg: assert response header Content-Type
+- name: ''
+  describe: ''
+  request:
+    method: GET
+    url: https://fandom-video.test.wangxiaobao.com/app/transcribe/cus/v1/wx-card/212379205181112320
+    headers:
+      Host: fandom-video.test.wangxiaobao.com
+      Accept: '*/*'
+      Connection: keep-alive
+      User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15
+        (KHTML, like Gecko) Mobile/15E148 Html5Plus/1.0 (Immersed/44) uni-app
+      Content-Fft: da14cc25f4c711443f7c9b450237880b&GeJeW22D8YE4vZikJMcT&1675750035392
+      Accept-Language: zh-CN,zh-Hans;q=0.9
+      Accept-Encoding: gzip, deflate, br
+    cookies:
+      sid_fandom-uniapp-gateway: s%3Aac3dGBF8SXuD_ft2MtNNkYrpMH43zpyR.AoU922tjHifn6%2FINWVWP3B5vDCnphyXE4SKaFuz3QX0
+    body: ''
+  validate:
+  - check: status_code
+    assert: equals
+    expect: 200
+    msg: assert response status code
+  - check: headers.Content-Type
+    assert: equals
+    expect: application/json
+    msg: assert response header Content-Type
+- name: ''
+  describe: ''
+  request:
+    method: GET
+    url: https://fandom-video.test.wangxiaobao.com/app/saler/saler/v1/info
+    headers:
+      Host: fandom-video.test.wangxiaobao.com
+      Accept: '*/*'
+      Connection: keep-alive
+      User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15
+        (KHTML, like Gecko) Mobile/15E148 Html5Plus/1.0 (Immersed/44) uni-app
+      Content-Fft: 5e01d16bda2ae78dfb29e120406d7491&CICWcMQ6QKwtLFZaNpDu&1675750035408
+      Accept-Language: zh-CN,zh-Hans;q=0.9
+      Accept-Encoding: gzip, deflate, br
+    cookies:
+      sid_fandom-uniapp-gateway: s%3Aac3dGBF8SXuD_ft2MtNNkYrpMH43zpyR.AoU922tjHifn6%2FINWVWP3B5vDCnphyXE4SKaFuz3QX0
+    body: ''
+  validate:
+  - check: status_code
+    assert: equals
+    expect: 200
+    msg: assert response status code
+  - check: headers.Content-Type
+    assert: equals
+    expect: application/json
+    msg: assert response header Content-Type

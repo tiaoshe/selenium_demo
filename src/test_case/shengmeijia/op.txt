@@ -1,0 +1,57 @@
+self = <src.test_case.shengmeijia.test_v1_account_login.TestV1AccountLogin object at 0x000001A9D0F531C0>
+username = {'ck-code': '500', 'ck-data': 'Non', 'ck-message': '用户名或密码错误', 'ck-status': '200', ...}
+
+    @allure.story("登录功能验证")
+    @allure.title("username-参数验证")
+    @pytest.mark.parametrize("username", data_dict['username'])
+    def test_v1_account_login_username(self, username):
+        kwargs = dict()
+        kwargs['headers'] = TestV1AccountLogin.headers
+        data = dict()
+        data['username'] = username['username']
+        data['password'] = username['password']
+        kwargs['json'] = data
+        kwargs['verify'] = False
+        response = TestV1AccountLogin.worker.v1_account_login(**kwargs)
+        # 检查数据正确性
+>       check_resout(response, assert_list, jsondat=username)
+
+test_v1_account_login.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+response = <Response [200]>
+assert_list = [{'assert': 'equals', 'check': 'status_code', 'expect': 200, 'msg': 'assert response status code'}, {'assert': 'equals...k': 'headers.Content-Type', 'expect': 'application/json; charset=UTF-8', 'msg': 'assert response header Content-Type'}]
+params = None
+jsondat = {'ck-code': '500', 'ck-data': 'Non', 'ck-message': '用户名或密码错误', 'ck-status': '200', ...}
+
+    def check_resout(response, assert_list, params=None, jsondat=None):
+        # 常规status_code 参数类型校验
+        if len(assert_list) > 0:
+            for check_item in assert_list:
+                if check_item['check'] == "status_code" and check_item['assert'] == "equals":
+                    assert_that(response.status_code, equal_to(check_item['expect']), check_item['msg'])
+                elif check_item['check'] == "headers.Content-Type" and check_item['assert'] == "equals":
+                    assert_that(response.headers['Content-Type'], equal_to(check_item['expect']), check_item['msg'])
+                else:
+                    return None
+        temp = None
+        # params 返回数据校验
+        if params:
+            temp = eval(response.text)
+            for key, value in params.items():
+                if key.startswith("ck") and value != "":
+                    new_key = key.replace("ck-", "")
+                    assert_that(temp.get(new_key), equal_to(value), "实际结果： %s 和预期结果： %s不符 " % (temp.get(new_key), value))
+        elif jsondat:
+            temp = response.json()
+            for key, value in jsondat.items():
+                if key.startswith("ck") and value != "":
+                    new_key = key.replace("ck-", "")
+                    # if value.isdigit():
+                    #     value = int(value)
+>                   assert_that(str(temp.get(new_key)), equal_to(value), "实际结果： %s 和预期结果： %s不符 " % (temp.get(new_key), value))
+E                   AssertionError: 实际结果： None 和预期结果： Non不符 
+E                   Expected: 'Non'
+E                        but: was 'None'
+
+..\..\..\common\F_check.py:29: AssertionError
