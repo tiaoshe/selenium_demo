@@ -1,0 +1,16 @@
+stages:
+  - build
+build:test:
+  stage: build
+  tags:
+    - test
+  script:
+    - pwd
+    - cli.exe open
+    - cli.exe user login --username 964697285@qq.com --password guang128
+    - cli.exe user info
+    - pwd
+    - cli.exe project open --path ./
+    - cli.exe pack --config ./pack.json
+  only:
+    - master
