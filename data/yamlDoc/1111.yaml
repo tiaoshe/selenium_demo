@@ -1,0 +1,39 @@
+config:
+  name: testcase description
+teststeps:
+- name: ''
+  describe: ''
+  request:
+    method: GET
+    url: http://fiddler2.com/content/GetArticles?clientId=646F71A7B9AAFBDCA7DD0C5C6DC4B4B6CA24FBC007823FAA96504AAC043FE032
+    headers:
+      Host: fiddler2.com
+      Connection: Keep-Alive
+    body: ''
+  validate:
+  - check: status_code
+    assert: equals
+    expect: 200
+    msg: assert response status code
+  - check: headers.Content-Type
+    assert: equals
+    expect: application/json; charset=utf-8
+    msg: assert response header Content-Type
+- name: ''
+  describe: ''
+  request:
+    method: GET
+    url: http://fiddler2.com/content/GetBanner?clientId=646F71A7B9AAFBDCA7DD0C5C6DC4B4B6CA24FBC007823FAA96504AAC043FE032
+    headers:
+      Host: fiddler2.com
+      Connection: Keep-Alive
+    body: ''
+  validate:
+  - check: status_code
+    assert: equals
+    expect: 200
+    msg: assert response status code
+  - check: headers.Content-Type
+    assert: equals
+    expect: application/json; charset=utf-8
+    msg: assert response header Content-Type

@@ -1,0 +1,6 @@
+setup 前置操作
+C:\Users\Administrator\AppData\Local\Temp\pytest-of-Administrator\pytest-25\test_case010
+用例运行时
+z我是李杰
+用例运行时
+teardown 后置操作
